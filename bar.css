@@ -1,0 +1,717 @@
+/*Culoarea de fundal și font family*/
+:root {
+  --primary-color: #555;
+  --secondary-color: #333;
+  --background-color: #f2f2f2;
+  --text-color: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Linie separatoare*/
+.transition-div {
+  height: 5px; 
+  background: linear-gradient(to bottom, #232323, #222121, #1f1e1e, #222121, #222121, #1f1e1e, #222121);
+  border-bottom: 1px solid rgba(10, 10, 10, 0.5);}
+  
+/*Titluri*/
+h1, h2, h3 {
+  color: #333;
+  font-size: 24px;
+font-family: 'Pacifico', cursive;
+color: var(--secondary-color);
+color: rgba(10, 1, 1, 0.8);
+}
+
+p {
+  line-height: 1.5;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:18px;
+  color:#333 ;
+  color: var(--text-color);
+  
+}
+/*Liste*/
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+}
+/*header*/
+header {
+  background: linear-gradient(to top, #000000, #1a1a1a, #302b29, #413937, #524d46, #645a55, #776767);
+    padding: 35px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   
+  }
+/*video*/
+.video-container {
+  position:auto;
+  width: 100%;
+  height: 0;
+  padding-bottom: 57.25%; 
+
+}
+.video-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);  /*  50% opacity */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+
+}
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/*Titlu antet*/
+header h1 {
+  font-family: 'Lora';
+  color: rgba(10, 1, 1, 0.8); 
+  animation: slide-in-top 1s forwards;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/*navigatie*/
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  }
+
+nav {
+    border-radius: 10px;
+}
+nav ul li::before,
+nav ul li::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+nav ul li::before {
+  top: 0;
+  left: 0;
+}
+
+nav ul li::after {
+  bottom: 0;
+  right: 0;
+}
+
+nav ul li:hover::before {
+  right: 0;
+  left: auto;
+  width: 100%;
+  background-color: #ffaa00;
+
+}
+
+nav ul li:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+  background-color: #ffaa00;
+}
+
+nav ul li a:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Sectiuni */
+section {
+  background-color: var(--background-color);
+  padding: 40px;
+  background-color: #fef6f6;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0;
+}
+/* Titlul sectiunii */
+section h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size:20px;
+}
+
+.footer {
+  padding:20px;
+  text-align: center;
+  font-size: 16px;
+  height: 20px;
+  background: linear-gradient(to top, #999999, #808080, #666666, #4d4d4d, #333333, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*linie separatoare intre dupa header*/
+.mySeparator {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+/* Sectiunea de bauturi */
+#drinks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#drinks li {
+  margin-bottom: 20px;
+}
+
+#drinks h4 {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#drinks p {
+  margin-top: 10px;
+}
+/* Sectiunea Despre noi */
+#despre-noi-section {
+  color: #fff; 
+  font-family: 'Open Sans', sans-serif; 
+  line-height: 0.7; 
+  text-align: justify; 
+  position:relative ;
+  overflow:hidden;
+  display: block;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color:#01161e;
+  z-index:2;
+}
+
+#despre-noi-section:hover {
+  font-size: 20px;
+}
+#despre-noi-section h2 {
+  
+font-family: 'Lora', serif;
+  color:white;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  font-weight: bold; 
+  margin-bottom: 40px; 
+  text-align:center;  
+}
+
+#despre-noi-section p {
+  color:white;
+  line-height: 1.5;
+  margin-bottom: 20px; 
+  text-indent: 50px;
+  font-size: 24px;
+  font-family: 'Lora', serif;
+}
+
+#background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4; 
+}
+section {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+/* imagini*/
+.poza-intreaga {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+header h1 {
+  animation: slide-in-top 1s forwards;
+}
+header ul li:hover {
+  transform: scale(1.2);
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-social {
+  margin: 0 10px;
+}
+#contact {
+  padding:3rem 1rem 1rem;
+  background-color: #6c757d;
+  color: #898f96;
+  background-image: url('contact.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh; 
+  }
+  
+.contact-grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact h2, #contact h3 {
+  color: #000000;
+}
+
+.social-title {
+  margin-top: 80px;
+}
+
+#contact p {
+  color: #010101;
+  margin:0;
+  font-size: 20px;
+}
+.fas.fa-phone {
+  color: #3a86ff;
+  margin-right:10px;
+}
+.far.fa-envelope, .fas.fa-map-marker-alt {
+  color:#3a86ff ;
+  margin-right:10px;
+}
+
+#contact h3 {
+font-family: 'Lora', serif;}
+
+.contact-info
+{
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    color: #fff7f7; 
+
+}
+#contact .info-wrapper {
+    display: grid;
+    gap: 0.5rem;
+    margin-top:-25px;
+ 
+}
+#contact .social-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#contact .buton-social img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+#contact .buton-social:hover img {
+  transform: scale(1.3);
+}
+
+/*sectiunea meniu*/
+#menu {
+  text-align: center;
+  font-family: 'Lora', serif;
+  background-color: #343a40;
+  background-image: url('menu.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#menu li:hover {
+
+  transform: scale(1.1);  
+  transition: transform 0.3s ease-in-out;  
+}
+#menu h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color:#f9f4f5;
+
+}
+#menu p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color:#f9f4f5;
+  font-family: 'Lora', serif;
+}
+#menu h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color:#f9f4f5;
+  font-family: 'Lora', serif;
+}
+
+#menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#menu li {
+  width: 360px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  background-color: #000000; 
+  border: 1px solid #040404;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  
+}
+#menu li h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color:#ede7e3;
+  flex-grow:1;
+  font-family: 'Lora', serif;
+
+}
+#menu li p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color:#ede7e3;
+  flex-grow: 1; 
+
+}
+#menu li img {
+  width: 280px;
+  height: 280px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #9ec1a3; 
+  padding: 10px;
+  
+}
+.zoom-text p, .zoom-text h4 {
+  font-family: 'Lora', serif;
+}
+#social-media {
+  background-color: #faf9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+#social-media h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buton-social {
+  margin: 0 10px;
+}
+
+.buton-social a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+.buton-social img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.buton-social span {
+  font-size: 14px;
+}
+button[type="submit"] {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+button[type="submit"]:hover {
+  background-color: #45a049; 
+}
+
+button[type="submit"]:focus {
+  outline: none; /
+}
+.carusel-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  background-color: #201f1f;
+}
+@media (min-width: 600px) {
+  .carusel-container {
+    height: 70vh; 
+  }
+}
+
+@media (min-width: 900px) {
+  .carusel-container {
+    height: 90vh; 
+  }
+}
+
+.carusel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;  
+  transition: all 0.5s ease;
+}
+
+.carusel-slide.active {
+  opacity: 1;
+}
+
+.carusel-slide img {
+  width: 100%;
+  height: 100%;
+  /* height:auto; */
+  object-fit:contain;
+  border-radius:10px;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgb(162, 210, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+
+.carousel-buttons:hover {
+  -webkit-box-shadow: 0px 0px 40px 2px rgba(244, 238, 238, 0.75);
+-moz-box-shadow: 0px 0px 40px 2px rgba(216, 207, 207, 0.75);
+box-shadow: 0px 0px 40px 2px rgba(218, 211, 211, 0.75);
+}
+
+.carousel-buttons.left {
+  left: 40px;
+}
+
+.carousel-buttons.right {
+  right: 40px;
+}
+
+.carousel-buttons span {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.carousel-buttons.left span::before {
+  content: "<";
+}
+
+.carousel-buttons.right span::before {
+  content: ">";
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_bg{
+    background-image: url(background.jpg);
+    max-width: 1280px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 800px;
+}
+
+.form-text{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.form-text h1 span img{
+    margin: 0 10px;
+}
+
+.form-text h1{
+    color: #fff;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.form-text p{
+    color: #fff;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: large;
+}
+
+.main-form div{
+    margin: 10px 20px;
+    width: 300px;
+    display: inline-block;
+}
+
+.main-form div input{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid #ffca00;;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+
+.main-form div select{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid #ffca00;;
+    font-size: 20px;
+    color: #fff;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+
+.main-form div span{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #fff;
+    font-size: 25px;
+}
+
+#submit-button{
+    width: 100%;
+    text-align: center;
+}
+
+#submit-button input{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: yellow !important;
+    color: black !important;
+    transition: all .3s;
+}
+
+#submit-button input:hover{
+  font-family: 'Akaya Telivigala', cursive;
+  width: 200px;
+  background-color: black !important;
+  color: #fff !important;
+}
+
+#submit-button input:active{
+  font-size: 19px;
+  background-color: rgb(46, 20, 5) !important;
+  color: #fff !important;
+}
+
+@media screen and (max-width:710px) {
+  .main-form{
+      text-align: center;
+  }
+}

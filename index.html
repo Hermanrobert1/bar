@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website-ul Meu</title>
+
+  <link rel="stylesheet" href="bar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <header>
+    
+    <nav>
+      <ul>
+    
+        <li><a href="despre-noi.html" target="_self">Despre noi</a></li>
+          <li><a href="menu.html">Meniu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reservation.html">Rezervare masă</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+    <section id="despre-noi-section">
+      <h2>Despre noi</h2>
+      <p>Bine ați venit la Barul Nostru! Suntem un local deosebit în care veți găsi o atmosferă relaxantă și o gamă largă de băuturi pentru a vă satisface gusturile. Cu o echipă de barmeni pasionați și experți în arta preparării cocktail-urilor, vă garantăm o experiență plină de savoare.</p>
+      <p>La Barul Nostru, ne concentrăm pe servicii de calitate și pe crearea unui mediu prietenos și primitoare. Avem o selecție variată de cocktail-uri pregătite cu grijă, de la clasicele și răcoritoarele Mojito și Cosmopolitan, până la exoticele și cremoasele Piña Colada. Ne mândrim cu folosirea ingredientelor proaspete și cu atenția la detalii în prepararea fiecărui cocktail, pentru a vă oferi o experiență de neuitat.</p>
+      <p>Echipa noastră de barmani este mereu pregătită să vă ofere sfaturi și sugestii personalizate în funcție de preferințele dumneavoastră. Fie că sunteți în căutarea unei băuturi ușoare și revigorante sau a unei combinații îndrăznețe și inedite, suntem aici pentru a vă ajuta să vă alegeți cocktail-ul perfect.</p>
+      <p>În plus de cocktail-uri, avem o gamă variată de băuturi alcoolice și non-alcoolice pentru a vă satisface gusturile. Indiferent dacă sunteți un pasionat al berilor artizanale sau un iubitor al vinurilor fine, vă garantăm că veți găsi ceva pe placul dumneavoastră.</p>
+      <p>Vă invităm să vă petreceți timpul într-o atmosferă plăcută, alături de prieteni sau colegi, și să vă bucurați de băuturile noastre de calitate. Fie că doriți să vă relaxați după o zi lungă de muncă sau să vă distrați în timpul unei ieșiri în oraș, Barul Nostru vă așteaptă cu brațele deschise.</p>
+    </section>
+      <div class="image-grid">
+        <img src="bar1.jpg" alt="Poza 1" onclick="zoomImage(this)">
+        <img src="bar2.jpg" alt="Poza 2" onclick="zoomImage(this)">
+        <img src="bar3.jpg" alt="Poza 3" onclick="zoomImage(this)">
+        <img src="bar4.jpg" alt="Poza 4" onclick="zoomImage(this)">
+        <img src="bar7.jpg" alt="Poza 7" onclick="zoomImage(this)">
+        <img src="bar8.jpg" alt="Poza 8" onclick="zoomImage(this)">
+        <img src="bar9.jpg" alt="Poza 9" onclick="zoomImage(this)">
+      </div>
+     
+    <div id="fullscreen-overlay" onclick="closeFullscreenImage()">
+      <img id="fullscreen-image">
+      <div id="fullscreen-arrow">&#9654;</div>
+    </div>
+  
+  </div>
+  <section id="menu">
+    <h2>Meniu</h2>
+    <p>La Barul Nostru, ne mândrim cu o varietate bogată de cocktail-uri pregătite cu pasiune și îndemânare. Fie că preferați cocktail-uri clasice sau căutați ceva inedit, avem ceva pentru fiecare gust.</p>
+    <h3>Beri speciale</h3>
+    <ul>
+      <li>
+        
+          <h4 >IPA Hop Heaven</h4>
+          <p>Ingrediente: apă, malț de orz, hamei aromatic, drojdie, lupulină.</p>
+          <p>Descriere: O bere artizanală cu arome bogate de hamei și un gust intens și amărui.</p>
+          <img src="beer6.jpg" alt="IPA Hoppy Heaven">   
+      </li>
+      <li>
+        <h4>Pilsner Pure Bliss</h4>
+        <p>Ingrediente: apă, malț de orz, hamei nobil, drojdie.</p>
+        <p>Descriere: O bere clasică și ușoară, cu note subtile de hamei și un gust răcoritor.</p>
+        <img src="beer5.jpg" alt="Pilsner Pure Bliss">
+      </li>
+      <li>
+        <h4>Stout Midnight Madness</h4>
+        <p>Ingrediente: apă, malț prăjit, hamei, drojdie, ciocolată, cafea.</p>
+        <p>Descriere: O bere neagră și bogată, cu arome de ciocolată și cafea și o textură catifelată.</p>
+        <img src="beer4.jpg" alt="Stout Midnight Madness">
+      </li>
+      <li>
+        <h4>Blond Ale Sunshine</h4>
+        <p>Ingrediente: apă, malț de orz, hamei, drojdie.</p>
+        <p>Descriere: O bere blondă, ușoară și răcoritoare, perfectă pentru zilele însorite.</p>
+        <img src="beer1.jpg" alt="Blond Ale Sunshine">
+      </li>
+      <li>
+        <h4>Wheat Beer Harvest</h4>
+        <p>Ingrediente: apă, malț de grâu, hamei, drojdie, coajă de portocală, coriandru.</p>
+        <p>Descriere: O bere de grâu cu arome fructate și condimentate, potrivită pentru sezonul de recoltă.</p>
+        <img src="beer2.jpg" alt="Wheat Beer Harvest">
+      </li>
+      <li>
+        <h4>Amber Ale Autumn Blaze</h4>
+        <p>Ingrediente: apă, malț de orz, hamei, drojdie, caramel, condimente de toamnă.</p>
+        <p>Descriere: O bere cu nuanțe de culoare ambră și arome calde de caramel și condimente de toamnă.</p>
+        <img src="beer3.jpg" alt="Amber Ale Autumn Blaze">
+      </li>
+    </ul>
+    <h3>Cocktail-uri clasice</h3>
+    <ul>
+      <li>
+        <h4>Mojito</h4>
+      <p>Ingrediente: rom, frunze de mentă, zahăr, suc de lămâie proaspăt stoarse, apă minerală, gheață.</p>
+      <p>Descriere: Un cocktail clasic și răcoritor, cu arome de mentă și lime.</p>
+      <img src="mojito.jpg" alt="Mojito" >
+      </li>
+      <li>
+        <h4>Cosmopolitan</h4>
+        <p>Ingrediente: votcă, Cointreau, suc de afine, suc de lime proaspăt stoarse.</p>
+        <p>Descriere: Un cocktail elegant și acidulat, perfect pentru o seară specială.</p>
+        <img src="cosmopolitan.jpg" alt="Cosmopolitan">
+      </li>
+      <li>
+        <h4>Margarita</h4>
+        <p>Ingrediente: tequila, Cointreau, suc de lime proaspăt stoarse, sare (pentru marginea paharului).</p>
+        <p>Descriere: Un cocktail clasic mexican, cu o combinație răcoritoare de arome dulci și acide.</p>
+        <img src="margarita.jpg" alt="Margarita"  >
+      </li>
+      <li>
+        <h4>Negroni</h4>
+        <p>Ingrediente: gin, vermut roșu, Campari.</p>
+        <p>Descriere: Un cocktail italian puternic și ușor amar, cu un echilibru perfect între aromele băuturilor.</p>
+        <img src="negroni.jpg" alt="Negroni" >   
+      </li>
+      <li>
+        <h4>Pina Colada</h4>
+        <p>Ingrediente: rom, suc de ananas, lapte de cocos, gheață.</p>
+        <p>Descriere: Un cocktail tropical și cremos, cu arome de ananas și cocos.</p>
+        <img src="pinacolada.jpg" alt="Pina Colada" >
+      </li>
+       <li>
+        <h4>Old Fashioned</h4>
+        <p>Ingrediente: whisky bourbon sau whisky de secară, zahăr, bitter și o picătură de citrice.</p>
+        <p>Descriere:Un cocktail care datează din secolul al XIX-lea și este adesea considerat cocktailul original</p>
+        <img src="old.jpg" alt="Pina Colada" >
+
+       </li>
+    </ul>
+  </section>
+    <!-- Aici poti afisa meniul -->
+  <section id="contact">
+    <div class="contact-info">
+      <div class="info-wrapper">
+        <h3>Informații de contact</h3>
+        <p><i class="fas fa-phone"></i>0757858278</p>
+        <p><i class="far fa-envelope"></i>hermanrobertt1@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i>Strada Plopilor, Nr. 36, Cluj Napoca</p>
+        <h3>Program</h3>
+        <p>LUNI-JOI: 11:30-24:00</p>
+        <p>VINERI-SÂMBĂTĂ: 11:30-01:00</p>
+        <p>DUMINICĂ: 11:30-24:00</p>
+      </div>
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2569.332728454123!2d23.56350657614338!3d46.76430852499022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490e89cb62c18f%3A0xcf9ba5d5172f7155!2sBloc%20L6%2C%20Strada%20Plopilor%2036%2C%20Cluj-Napoca%20400535!5e1!3m2!1shu!2sro!4v1686646331606!5m2!1shu!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="social-media">
+      <h2>Urmează-ne pe rețelele sociale</h2>
+      <div class="social-buttons">
+        <div class="buton-social">
+          <a href="https://www.facebook.com/pagina-ta" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icon.png" alt="Facebook" style="width: 50px; height: 50px;">
+            <span>Facebook</span>
+          </a>
+        </div>
+        <div class="buton-social">
+          <a href="https://www.instagram.com/pagina-ta" target="_blank" rel="noopener noreferrer">
+            <img src="instagram-icon.png" alt="Instagram" style="width: 50px; height: 50px;">
+            <span>Instagram</span>
+          </a>
+        </div>
+        </div>
+  </section>
+  
+  <section id="reservation">
+    <h2>Rezervare masă</h2>
+    <p><strong>Pentru a face o rezervare la Barul Nostru, vă rugăm să completați formularul de mai jos.Vă vom contacta în cel mai scurt timp pentru a confirma rezervarea.</strong></p>
+    <form>
+        <label for="name">Nume:</label>
+        <input type="text" id="name" name="name" required>
+         <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+    <label for="date">Data:</label>
+    <input type="date" id="date" name="date" required>
+    <label for="time">Oră:</label>
+    <input type="time" id="time" name="time" required>
+    <label for="guests">Număr de persoane:</label>
+    <input type="number" id="guests" name="guests" required>
+    <button type="submit">Trimite rezervarea</button>
+  </form>
+</section>
+</div>
+<!-- Aici poti afisa detaliile rezervarii -->
+  <footer class="footer">
+  <p>&copy; 2023 Website-ul Meu. Toate drepturile rezervate.</p>
+  </footer>
+  <script src="bar.js"></script>
+
+</body>
+</html>

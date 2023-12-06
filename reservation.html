@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website-ul Meu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="rezervare.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body class="main_bg">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="despre-noi.html" target="_self">DESPRE NOI</a></li>
+        <li><a href="menu.html" target="_self">MENIU</a></li>
+        <li><a href="contact.html" target="_self">CONTACT</a></li>
+        <li><a href="reservation.html" target="_self">REZERVARE MASA</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="transition-div"></div>
+ 
+  <div class="form">
+    <div class="form-text">
+        <h1><span><img src="art-1.png" alt=""></span>Rezerva masa acum <span><img src="art-1.png" alt=""></span></h1>
+        <p>Rezervă-ți locul în rândul nostru și bucură-te de o experiență de neuitat. Completează formularul de mai jos și echipa noastră te va contacta în cel mai scurt timp pentru confirmare.</p>
+    </div>
+    <div class="main-form">
+      
+            <div>
+                <span>Nume</span>
+                <input type="text" name="fullname" id="fullname" placeholder="Numele tau aici..." required>
+            </div>
+            <div>
+                <span>Adresa de email</span>
+                <input type="email" name="email" id="email" placeholder="Adresa ta de mail..." required> 
+            </div>
+            <div>
+                <span>Persoane</span>
+                <select name="people" id="people" required>
+                    <option value=""><---Persoane---></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div>
+                <span>Ora</span>
+                <input type="text" name="time" id="time" placeholder="Ora" required>
+            </div>
+            <div>
+                <span>Data</span>
+                <input type="date" name="date" id="date" placeholder="Data" required>
+            </div>
+            <div>
+                <span>Numar de telefon</span>
+                <input type="number" name="number" id="number" placeholder="Nr tau de telefon..." required>
+            </div>
+            <div id="submit-button">
+                <input type="submit" value="Trimite" id="submit">
+            </div>
+         
+        </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2023 Website-ul Meu. Toate drepturile rezervate.</p>
+    </footer>
+  <script src="bar.js"></script>
+</body>
+</html>
